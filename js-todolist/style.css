@@ -1,0 +1,119 @@
+body {
+
+  caret-color:red;
+}
+
+#todolist {
+  max-width: 550px;
+  margin: auto;
+  background: linear-gradient(blue , pink);
+}
+.title{
+  margin:0px;
+  padding-top: 10px;
+  padding-bottom : 5px;
+  color: white;
+  text-align: center;
+}
+
+.input__section form {
+  margin: 0px 150px 5px 150px;
+  display: flex;
+  justify-content : space-between;
+}
+.itemadd {
+  border-radius:15px;
+  height : 20px;
+  border: 2px solid red;
+  padding: 0px 20px;
+}
+*:focus {
+  outline: none;
+}
+
+.input_button{
+
+  font-size: 13px;
+  margin-left: 15px;
+
+}
+ul {
+  padding : 0px;
+  margin : 0px;
+  list-style: none;
+}
+
+ul li {
+  cursor : pointer;
+  position: relative;
+  padding: 12px 8px 12px 150px;
+  background-color: #eee;
+  font-size:15px;
+}
+
+ul li:hover {
+  background: tomato;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  align-items: center;
+  text-align: center;
+  border: none;
+}
+.close:hover {
+  background: linear-gradient(135deg, #02aab0, #00cdac);
+  border-radius: 100%;
+  color: white;
+}
+ul li.checked {
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #272341;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 13px;
+  left: 80px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  #todolist {
+    max-width: 100%;
+  }
+
+
+  .input__section form {
+    margin: 0px 30px 5px 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #fbe7c6;
+    padding: 0px 30px;
+  }
+
+  .close {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    margin: 8px 15px;
+    padding: 4px 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+  }
+}
